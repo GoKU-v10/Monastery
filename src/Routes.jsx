@@ -17,12 +17,11 @@ const Routes = () => {
       <ScrollToTop />
       <RouterRoutes>
         {/* Define your route here */}
-        <Route path="/" element={<AIManuscriptPortal />} />
+        <Route path="/" element={<Homepage />} />
         <Route path="/audio-wisdom-library" element={<AudioWisdomLibrary />} />
         <Route path="/ai-manuscript-portal" element={<AIManuscriptPortal />} />
         <Route path="/heritage-community" element={<HeritageCommunity />} />
         <Route path="/virtual-pilgrimage-center" element={<VirtualPilgrimageCenter />} />
-        <Route path="/homepage" element={<Homepage />} />
         <Route path="/environmental-stewardship" element={<EnvironmentalStewardship />} />
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>
