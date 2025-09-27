@@ -9,59 +9,35 @@
       }
     }
   ],
-  "routes": [
+  "headers": [
     {
-      "src": "^/static/(.*)",
-      "headers": { "cache-control": "public, max-age=31536000, immutable" },
-      "dest": "/static/$1"
+      "source": "/static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     },
     {
-      "src": "^/assets/(.*)",
-      "headers": { "cache-control": "public, max-age=31536000, immutable" },
-      "dest": "/assets/$1"
-    },
-    {
-      "src": "^/favicon.ico",
-      "dest": "/favicon.ico"
-    },
-    {
-      "src": "^/manifest.json",
-      "dest": "/manifest.json"
-    },
-    {
-      "src": "^/robots.txt",
-      "dest": "/robots.txt"
-    },
-    {
-      "src": "/audio-wisdom-library",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/ai-manuscript-portal",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/heritage-community",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/virtual-pilgrimage-center",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/homepage",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/environmental-stewardship",
-      "dest": "/index.html"
-    },
-    {
-      "src": "^/(?<path>.*)",
-      "dest": "/index.html"
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     }
   ],
   "rewrites": [
+    {
+      "source": "/static/(.*)",
+      "destination": "/static/$1"
+    },
+    {
+      "source": "/assets/(.*)",
+      "destination": "/assets/$1"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
