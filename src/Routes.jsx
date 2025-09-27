@@ -19,6 +19,7 @@ const Routes = () => {
         {/* Define your route here */}
         <Route path="/" element={<Homepage />} />
         <Route path="/audio-wisdom-library" element={<AudioWisdomLibrary />} />
+        <Route path="/homepage" element={<Homepage />} />
         <Route path="/ai-manuscript-portal" element={<AIManuscriptPortal />} />
         <Route path="/heritage-community" element={<HeritageCommunity />} />
         <Route path="/virtual-pilgrimage-center" element={<VirtualPilgrimageCenter />} />
