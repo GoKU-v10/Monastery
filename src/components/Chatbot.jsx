@@ -28,7 +28,9 @@ const Chatbot = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=AIzaSyAmyHigEErE86trekhBz0TbH9Pl6Wj2jQ0', {
+      const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+      
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-exp:generateContent?key=${apiKey}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -39,7 +41,7 @@ const Chatbot = () => {
           }]
         })
       });
-
+      
       const data = await response.json();
       const botResponse = data.candidates?.[0]?.content?.parts?.[0]?.text || "I'm sorry, I couldn't process that request.";
       
