@@ -19,6 +19,7 @@ const Header = () => {
 
   const navigationItems = [
     { path: '/homepage', label: 'Home', icon: 'Home' },
+    { path: '/monasteries', label: 'Monasteries', icon: 'Building' },
     { path: '/ai-manuscript-portal', label: 'AI Manuscripts', icon: 'BookOpen' },
     { path: '/virtual-pilgrimage-center', label: 'Virtual Pilgrimage', icon: 'Mountain' },
     { path: '/audio-wisdom-library', label: 'Audio Wisdom', icon: 'Headphones' },

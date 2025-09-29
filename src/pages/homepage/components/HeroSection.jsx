@@ -127,15 +127,15 @@ const HeroSection = () => {
                 </Button>
               </Link>
               
-              <Link to="/audio-wisdom-library">
+              <Link to="/monasteries">
                 <Button
                   variant="outline"
                   size="lg"
-                  iconName="Headphones"
+                  iconName="Mountain"
                   iconPosition="left"
                   className="w-full sm:w-auto"
                 >
-                  Audio Wisdom
+                  View Monasteries
                 </Button>
               </Link>
             </div>

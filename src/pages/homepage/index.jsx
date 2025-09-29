@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Header from '../../components/ui/Header';
 import HeroSection from './components/HeroSection';
+import MonasteriesSection from './components/MonasteriesSection';
 import FeaturesGrid from './components/FeaturesGrid';
 import LiveEnvironmentalData from './components/LiveEnvironmentalData';
 import PersonalizedJourneys from './components/PersonalizedJourneys';
@@ -68,18 +69,23 @@ const Homepage = () => {
           {/* Hero Section */}
           <HeroSection />
 
-          {/* Features Grid */}
+          {/* Monasteries Section */}
           <div className="scroll-reveal">
+            <MonasteriesSection />
+          </div>
+
+          {/* Features Grid */}
+          <div className="scroll-reveal delay-1">
             <FeaturesGrid />
           </div>
 
           {/* Live Environmental Data */}
-          <div className="scroll-reveal delay-1">
+          <div className="scroll-reveal delay-2">
             <LiveEnvironmentalData />
           </div>
 
           {/* Personalized Journeys */}
-          <div className="scroll-reveal delay-2">
+          <div className="scroll-reveal delay-3">
             <PersonalizedJourneys />
           </div>
         </main>
