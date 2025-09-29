@@ -25,10 +25,10 @@ const Header = () => {
     { path: '/ai-manuscript-portal', label: 'AI Manuscripts', icon: 'BookOpen' },
     { path: '/virtual-pilgrimage-center', label: 'Virtual Pilgrimage', icon: 'Mountain' },
     { path: '/audio-wisdom-library', label: 'Audio Wisdom', icon: 'Headphones' },
-    { path: '/environmental-stewardship', label: 'Environmental Stewardship', icon: 'Leaf' },
   ];
 
   const moreItems = [
+    { path: '/environmental-stewardship', label: 'Environmental Stewardship', icon: 'Leaf' },
     { path: '/heritage-community', label: 'Community', icon: 'Users' },
   ];
 
