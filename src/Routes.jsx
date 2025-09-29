@@ -9,6 +9,7 @@ import HeritageCommunity from './pages/heritage-community';
 import VirtualPilgrimageCenter from './pages/virtual-pilgrimage-center';
 import Homepage from './pages/homepage';
 import EnvironmentalStewardship from './pages/environmental-stewardship';
+import CulturalEventPage from './pages/cultural-events';
 import Monasteries from './pages/monasteries';
 
 const Routes = () => {
@@ -25,6 +26,7 @@ const Routes = () => {
         <Route path="/heritage-community" element={<HeritageCommunity />} />
         <Route path="/virtual-pilgrimage-center" element={<VirtualPilgrimageCenter />} />
         <Route path="/environmental-stewardship" element={<EnvironmentalStewardship />} />
+        <Route path="/cultural-events" element={<CulturalEventPage />} />
         <Route path="/monasteries" element={<Monasteries />} />
         <Route path="/monasteries/:id" element={<Monasteries />} />
         <Route path="*" element={<NotFound />} />
